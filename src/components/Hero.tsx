@@ -2,11 +2,13 @@
 import React, { useEffect, useRef } from 'react';
 import { LucideGlobe, LucideDna, LucideBrain, LucideFlaskConical, LucideSearch, AlertTriangle } from 'lucide-react';
 import DNAAnimation from './DNAAnimation';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const title = titleRef.current;
@@ -83,7 +85,11 @@ const Hero = () => {
             >
               <a 
                 href="https://chatgpt.com/g/g-JjuJ9E9px-genome-gpt" 
-                className="cyber-button text-center"
+                className={`text-center font-cyber font-bold px-6 py-2 rounded-md transition-all duration-300 ${
+                  isMobile 
+                    ? "bg-cyber-neon-blue text-white shadow-neon-blue" 
+                    : "cyber-button"
+                }`}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -92,7 +98,11 @@ const Hero = () => {
               
               <a 
                 href="#features" 
-                className="cyber-button-alt text-center"
+                className={`text-center font-cyber font-bold px-6 py-2 rounded-md transition-all duration-300 ${
+                  isMobile 
+                    ? "bg-cyber-neon-pink text-white shadow-neon-pink" 
+                    : "cyber-button-alt"
+                }`}
               >
                 EXPLORE FEATURES
               </a>

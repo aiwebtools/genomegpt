@@ -100,7 +100,7 @@ const Navbar = () => {
           <nav className="md:hidden py-4 flex flex-col space-y-4 animate-fade-in">
             <a 
               href="https://chatgpt.com/g/g-JjuJ9E9px-genome-gpt" 
-              className="cyber-button w-full text-center"
+              className="bg-cyber-neon-blue text-white font-cyber font-bold px-6 py-2 rounded-md text-center shadow-neon-blue"
               onClick={() => setIsOpen(false)}
               target="_blank" 
               rel="noopener noreferrer"
@@ -109,21 +109,21 @@ const Navbar = () => {
             </a>
             <a 
               href="#faq" 
-              className="text-white hover:text-cyber-neon-blue transition-colors px-4 py-2"
+              className="bg-cyber-bg-darker border border-cyber-neon-blue text-white hover:text-cyber-neon-blue transition-colors px-4 py-2 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               FAQ
             </a>
             <a 
               href="#disclaimer" 
-              className="text-white hover:text-cyber-neon-blue transition-colors px-4 py-2"
+              className="bg-cyber-bg-darker border border-cyber-neon-blue text-white hover:text-cyber-neon-blue transition-colors px-4 py-2 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Disclaimer
             </a>
             <a 
               href="https://www.aiwebtools.ai" 
-              className="text-white hover:text-cyber-neon-blue transition-colors px-4 py-2"
+              className="bg-cyber-bg-darker border border-cyber-neon-blue text-white hover:text-cyber-neon-blue transition-colors px-4 py-2 rounded-md"
               onClick={() => setIsOpen(false)}
               target="_blank" 
               rel="noopener noreferrer"
