@@ -21,6 +21,15 @@ const Disclaimer = () => {
           </div>
           
           <div className="glass-panel p-8 space-y-6">
+            <div className="border-l-4 border-cyber-neon-yellow p-4 bg-black/30 mb-6">
+              <h3 className="text-xl font-bold text-white mb-2">Experimental Technology Notice</h3>
+              <p className="text-gray-300">
+                <strong>For informational and research purposes only.</strong> Genome GPT is experimental in nature. 
+                Always verify findings, as AI may generate incorrect answers and experience hallucinations 
+                occasionally. This technology is powered by GPT-4o and shares its limitations.
+              </p>
+            </div>
+            
             <div>
               <h3 className="text-xl font-bold text-white mb-2">For Research Purposes Only</h3>
               <p className="text-gray-400">
