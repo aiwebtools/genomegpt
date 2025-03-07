@@ -115,15 +115,20 @@ const Hero = () => {
               alt="DNA Double Helix" 
               className="object-cover w-full h-full object-center transform transition-transform duration-700 hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyber-bg-darker to-transparent opacity-40"></div>
-            <div className="absolute bottom-0 left-0 right-0 bg-black/70 px-3 py-2 text-xs text-gray-400 flex items-center gap-1">
-              <AlertTriangle className="h-3 w-3 text-cyber-neon-yellow" />
-              <span>For informational and research purposes only. Results may vary and should be verified by qualified professionals.</span>
+          </div>
+        </div>
+        
+        {/* Disclaimer moved here - between image and feature grid */}
+        <div className="mt-6 mb-4 flex items-center justify-center">
+          <div className="bg-black/70 px-4 py-2 rounded-md border border-cyber-neon-yellow/30 max-w-3xl">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="h-4 w-4 text-cyber-neon-yellow flex-shrink-0" />
+              <span className="text-xs text-gray-400">For informational and research purposes only. Results may vary and should be verified by qualified professionals.</span>
             </div>
           </div>
         </div>
         
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { icon: LucideDna, title: "Genome Analysis", desc: "Detailed analysis of genetic sequences" },
             { icon: LucideBrain, title: "AI-Powered Insights", desc: "Advanced AI interpretation of genetic data" },
