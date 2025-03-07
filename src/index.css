@@ -1,101 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 10% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 15% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 191 100% 50%;
+    --primary-foreground: 0 0% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 317 100% 50%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 250 100% 60%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 90% 50%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 191 100% 50%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-cyber-neon-blue/20 selection:text-white;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-cyber-bg-dark text-foreground font-mono antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(0, 178, 255, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 90% 80%, rgba(155, 48, 255, 0.15) 0%, transparent 40%),
+      linear-gradient(to bottom, rgba(5, 5, 8, 0.9), rgba(5, 5, 8, 1));
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-glow-blue {
+    text-shadow: 0 0 10px rgba(0, 178, 255, 0.7), 0 0 20px rgba(0, 178, 255, 0.5);
+  }
+  
+  .text-glow-pink {
+    text-shadow: 0 0 10px rgba(255, 0, 174, 0.7), 0 0 20px rgba(255, 0, 174, 0.5);
+  }
+  
+  .text-glow-purple {
+    text-shadow: 0 0 10px rgba(155, 48, 255, 0.7), 0 0 20px rgba(155, 48, 255, 0.5);
+  }
+  
+  .neon-border {
+    @apply relative;
+  }
+  
+  .neon-border::after {
+    content: '';
+    @apply absolute inset-0 rounded-lg;
+    background: linear-gradient(90deg, #00b2ff, #9b30ff, #ff00ae, #00b2ff);
+    background-size: 300% 300%;
+    animation: flow 6s linear infinite;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  
+  .neon-border::before {
+    content: '';
+    @apply absolute inset-[1px] bg-cyber-bg-dark rounded-lg z-0;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-lg shadow-lg;
   }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cyber-grid {
+    background-color: rgba(10, 10, 16, 0.8);
+    background-image: linear-gradient(rgba(0, 178, 255, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 178, 255, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+  
+  .cyber-dot-grid {
+    background-image: radial-gradient(rgba(0, 178, 255, 0.2) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  
+  /* Animated underline effect */
+  .hover-underline {
+    @apply relative;
+  }
+  
+  .hover-underline::after {
+    content: '';
+    @apply absolute bottom-[-2px] left-0 w-0 h-[2px] bg-cyber-neon-blue transition-all duration-300;
+  }
+  
+  .hover-underline:hover::after {
+    @apply w-full;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-cyber-bg-darker;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyber-neon-blue/50 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-neon-blue/70;
+  }
+}
+
+/* Animations and effects */
+.neon-pulse {
+  animation: neon-pulse 2s infinite;
+}
+
+@keyframes neon-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(0, 178, 255, 0.8)) drop-shadow(0 0 8px rgba(0, 178, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(0, 178, 255, 0.8)) drop-shadow(0 0 15px rgba(0, 178, 255, 0.5));
+  }
+}
+
+/* DNA animation */
+.dna-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.dna-helix {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.dna-strand {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate-slow 20s linear infinite;
+}
+
+.dna-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.dna-particle:nth-child(odd) {
+  background-color: rgba(0, 178, 255, 0.8);
+}
+
+.dna-particle:nth-child(even) {
+  background-color: rgba(155, 48, 255, 0.8);
+}
+
+.dna-connector {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0, 178, 255, 0.5), rgba(155, 48, 255, 0.5));
+}
+
+/* Page transition */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Button styles */
+.cyber-button {
+  @apply relative bg-transparent border border-cyber-neon-blue text-cyber-neon-blue font-cyber font-bold px-6 py-2 rounded-md overflow-hidden transition-all duration-300 hover:text-white hover:shadow-neon-blue;
+}
+
+.cyber-button::before {
+  content: '';
+  @apply absolute inset-0 bg-cyber-neon-blue -z-10 opacity-0 transition-opacity duration-300;
+}
+
+.cyber-button:hover::before {
+  @apply opacity-100;
+}
+
+.cyber-button-alt {
+  @apply relative bg-transparent border border-cyber-neon-pink text-cyber-neon-pink font-cyber font-bold px-6 py-2 rounded-md overflow-hidden transition-all duration-300 hover:text-white hover:shadow-neon-pink;
+}
+
+.cyber-button-alt::before {
+  content: '';
+  @apply absolute inset-0 bg-cyber-neon-pink -z-10 opacity-0 transition-opacity duration-300;
+}
+
+.cyber-button-alt:hover::before {
+  @apply opacity-100;
 }
