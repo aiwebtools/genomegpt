@@ -22,9 +22,14 @@ const HowItWorks = () => {
       });
     }, observerOptions);
 
+    // Ensure all steps are initially visible with a slight delay for animation
     stepsRef.current.forEach((step, i) => {
       if (step) {
-        step.style.opacity = '0';
+        // Remove the initial opacity setting that was hiding content
+        step.style.opacity = '1';
+        step.classList.add('transition-all', 'duration-500');
+        
+        // Set a slight delay for a nice cascading effect
         setTimeout(() => {
           observer.observe(step);
         }, i * 200);
@@ -65,7 +70,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 bg-cyber-bg-darker relative">
+    <section ref={sectionRef} id="how-it-works" className="py-20 bg-cyber-bg-darker relative">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-4 py-1 mb-4 rounded-full border border-cyber-neon-purple bg-cyber-bg-dark">
@@ -94,7 +99,7 @@ const HowItWorks = () => {
                 <div 
                   key={index}
                   ref={(el) => addToStepsRef(el, index)}
-                  className="glass-panel p-8 relative transition-all duration-300 hover:shadow-neon-blue"
+                  className="glass-panel p-8 relative transition-all duration-300 hover:shadow-neon-blue animate-fade-in"
                 >
                   <div className={`mb-6 bg-${step.color}/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto md:mb-12 relative z-10`}>
                     <step.icon className={`w-8 h-8 text-${step.color}`} />
