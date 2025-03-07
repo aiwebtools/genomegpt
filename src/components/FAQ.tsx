@@ -131,13 +131,15 @@ const FAQ = () => {
           
           <div className="mt-10 text-center">
             <p className="text-gray-400 mb-4">
-              Still have questions about how Genome GPT can help with your research?
+              Ready to explore the secrets of genetic code with AI-powered analysis?
             </p>
             <a 
-              href="mailto:Contact@ai-webtools.com" 
-              className="cyber-button"
+              href="https://chatgpt.com/g/g-JjuJ9E9px-genome-gpt" 
+              className="cyber-button bg-gradient-to-r from-cyber-neon-blue to-cyber-neon-purple px-8 py-3 text-white font-cyber text-lg hover:shadow-lg hover:shadow-cyber-neon-blue/30 transition-all duration-300"
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              CONTACT US
+              TRY GENOME GPT NOW
             </a>
           </div>
         </div>
