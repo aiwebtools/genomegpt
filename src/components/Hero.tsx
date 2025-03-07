@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { LucideGlobe, LucideDna, LucideBrain, LucideFlaskConical, LucideSearch } from 'lucide-react';
+import { LucideGlobe, LucideDna, LucideBrain, LucideFlaskConical, LucideSearch, AlertTriangle } from 'lucide-react';
 import DNAAnimation from './DNAAnimation';
 
 const Hero = () => {
@@ -106,6 +106,10 @@ const Hero = () => {
               className="object-cover w-full h-full object-center transform transition-transform duration-700 hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-cyber-bg-darker to-transparent opacity-40"></div>
+            <div className="absolute bottom-0 left-0 right-0 bg-black/70 px-3 py-2 text-xs text-gray-400 flex items-center gap-1">
+              <AlertTriangle className="h-3 w-3 text-cyber-neon-yellow" />
+              <span>For informational and research purposes only. Results may vary and should be verified by qualified professionals.</span>
+            </div>
           </div>
         </div>
         
