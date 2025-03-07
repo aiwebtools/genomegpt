@@ -19,6 +19,8 @@ const Testimonials = () => {
           if (testimonialsRef.current) {
             const testimonials = testimonialsRef.current.children;
             Array.from(testimonials).forEach((testimonial, i) => {
+              // Remove opacity-0 class immediately to ensure testimonials are visible even without animation
+              (testimonial as HTMLElement).classList.remove('opacity-0');
               setTimeout(() => {
                 (testimonial as HTMLElement).classList.add('animate-fade-in');
               }, i * 150);
@@ -32,6 +34,16 @@ const Testimonials = () => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
+
+    // Ensure testimonials are visible even if intersection observer doesn't trigger
+    setTimeout(() => {
+      if (testimonialsRef.current) {
+        const testimonials = testimonialsRef.current.children;
+        Array.from(testimonials).forEach((testimonial) => {
+          (testimonial as HTMLElement).classList.remove('opacity-0');
+        });
+      }
+    }, 500);
 
     return () => {
       if (sectionRef.current) observer.unobserve(sectionRef.current);
@@ -70,9 +82,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 relative overflow-hidden bg-cyber-bg-darker/50 backdrop-blur-sm">
+    <section 
+      ref={sectionRef} 
+      id="testimonials"
+      className="py-20 relative overflow-hidden bg-cyber-bg-darker border-t border-b border-cyber-neon-blue/20"
+    >
+      {/* Background effects */}
       <div className="absolute inset-0 cyber-grid opacity-10"></div>
-      <div className="container mx-auto px-4">
+      <div className="absolute inset-0 bg-gradient-to-br from-cyber-neon-blue/5 to-cyber-neon-purple/5"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-4 py-1 mb-4 rounded-full border border-cyber-neon-green bg-cyber-bg-darker">
             <p className="text-sm font-medium text-cyber-neon-green">
@@ -99,7 +118,7 @@ const Testimonials = () => {
             return (
               <div 
                 key={index} 
-                className="glass-card p-8 opacity-0 transition-all duration-300 hover:border-cyber-neon-green group hover:bg-white/10"
+                className="glass-card p-8 transition-all duration-300 hover:border-cyber-neon-green group hover:bg-white/10"
               >
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex mb-4">
