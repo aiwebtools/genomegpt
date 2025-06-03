@@ -51,20 +51,20 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: Upload,
-      title: "Upload Your Data",
-      description: "Submit your genetic sequences, genomic data files, or research questions through the interface.",
+      title: "Upload Genetic Data",
+      description: "Submit your genetic sequences or genomic data files to our free AI web tools platform for comprehensive analysis.",
       color: "cyber-neon-blue"
     },
     {
       icon: Brain,
-      title: "AI Analysis",
-      description: "Genome GPT processes your data using advanced machine learning algorithms specialized in genetic analysis.",
+      title: "AI Processing & Analysis",
+      description: "Our advanced artificial intelligence algorithms process your data using specialized machine learning models for genetic research.",
       color: "cyber-neon-purple"
     },
     {
       icon: Download,
-      title: "Receive Insights",
-      description: "Get comprehensive reports, visualizations, and actionable insights based on your genomic data.",
+      title: "Get AI-Generated Insights",
+      description: "Receive detailed reports, visualizations, and actionable insights from our free AI tools for scientific discovery and research.",
       color: "cyber-neon-pink"
     }
   ];
@@ -75,17 +75,18 @@ const HowItWorks = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-4 py-1 mb-4 rounded-full border border-cyber-neon-purple bg-cyber-bg-dark">
             <p className="text-sm font-medium text-cyber-neon-purple">
-              Simple Process
+              Simple AI Web Tools Process
             </p>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold font-cyber mb-6">
-            <span className="text-white">How Genome GPT</span>
-            <span className="text-cyber-neon-purple text-glow-purple"> Works</span>
+            <span className="text-white">How Our Free AI Tools</span>
+            <span className="text-cyber-neon-purple text-glow-purple"> Transform Genetics</span>
           </h2>
           
           <p className="text-gray-300">
-            Unlocking genetic insights has never been easier. Follow these simple steps to harness the power of AI for your genomic research.
+            Experience the power of artificial intelligence in genetic research. Our free AI web tools make advanced 
+            genomic analysis accessible to researchers, scientists, and genetic professionals worldwide.
           </p>
         </div>
         
@@ -130,8 +131,9 @@ const HowItWorks = () => {
               className="cyber-button"
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label="Start using free AI web tools for genetic analysis"
             >
-              START ANALYZING NOW
+              START USING FREE AI TOOLS
             </a>
           </div>
         </div>

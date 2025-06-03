@@ -59,7 +59,7 @@ const Hero = () => {
           <div className="flex-1 max-w-2xl">
             <div className="inline-block px-4 py-1 mb-6 rounded-full border border-cyber-neon-blue bg-cyber-bg-darker">
               <p className="text-sm font-medium text-cyber-neon-blue">
-                Next-Gen Genomic Analysis
+                Free AI Web Tools - Advanced Genomic Analysis
               </p>
             </div>
             
@@ -67,16 +67,17 @@ const Hero = () => {
               ref={titleRef}
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-cyber mb-6 leading-tight"
             >
-              <span className="text-white">Unlock the Secrets of</span>
-              <span className="block text-cyber-neon-blue text-glow-blue"> Genetic Code</span>
+              <span className="text-white">AI Web Tools for</span>
+              <span className="block text-cyber-neon-blue text-glow-blue"> Genetic Research</span>
             </h1>
             
             <p 
               ref={subtitleRef}
               className="text-lg text-gray-300 mb-8"
             >
-              Genome GPT combines artificial intelligence with genetics expertise to analyze genomic data, 
-              providing comprehensive scientific insights and discoveries with unprecedented accuracy and depth.
+              Genome GPT - The leading free AI tool for genomic analysis. Our advanced artificial intelligence 
+              platform combines cutting-edge AI web tools with genetics expertise to analyze DNA sequences, 
+              providing comprehensive scientific insights for researchers, scientists, and genetic professionals worldwide.
             </p>
             
             <div 
@@ -92,8 +93,9 @@ const Hero = () => {
                 }`}
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Access free Genome GPT AI tool for genetic analysis"
               >
-                USE GENOME GPT NOW
+                USE FREE AI TOOL NOW
               </a>
               
               <a 
@@ -103,8 +105,9 @@ const Hero = () => {
                     ? "bg-cyber-neon-pink text-white shadow-neon-pink" 
                     : "cyber-button-alt"
                 }`}
+                aria-label="Explore AI web tools features"
               >
-                EXPLORE FEATURES
+                EXPLORE AI FEATURES
               </a>
             </div>
           </div>
@@ -112,7 +115,7 @@ const Hero = () => {
           <div className="flex-1 relative max-w-md w-full h-[400px] glass-panel overflow-hidden neon-border">
             <img 
               src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-conceptual-image-of-a-dna-double-helix-with-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
-              alt="DNA Double Helix" 
+              alt="AI-powered DNA analysis visualization - Free genetic research tools" 
               className="object-cover w-full h-full object-center transform transition-transform duration-700 hover:scale-105"
             />
           </div>
@@ -130,10 +133,10 @@ const Hero = () => {
         
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: LucideDna, title: "Genome Analysis", desc: "Detailed analysis of genetic sequences" },
-            { icon: LucideBrain, title: "AI-Powered Insights", desc: "Advanced AI interpretation of genetic data" },
-            { icon: LucideFlaskConical, title: "Scientific Discoveries", desc: "Identify patterns for research breakthroughs" },
-            { icon: LucideSearch, title: "Cannabis Genetics", desc: "Specialized insights into cannabis genomics" },
+            { icon: LucideDna, title: "Free Genome Analysis", desc: "Advanced AI tools for detailed genetic sequence analysis" },
+            { icon: LucideBrain, title: "AI-Powered Research", desc: "Intelligent interpretation of complex genetic data" },
+            { icon: LucideFlaskConical, title: "Scientific Discovery", desc: "AI web tools for breakthrough genetic research" },
+            { icon: LucideSearch, title: "Cannabis Genetics AI", desc: "Specialized artificial intelligence for plant genomics" },
           ].map((item, index) => (
             <div key={index} className="glass-card p-6 transition-all duration-300 hover:border-cyber-neon-blue group">
               <div className="mb-4 bg-cyber-neon-blue/10 w-12 h-12 rounded-lg flex items-center justify-center group-hover:bg-cyber-neon-blue/20 transition-colors duration-300">

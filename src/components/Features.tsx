@@ -64,43 +64,43 @@ const Features = () => {
   const features = [
     {
       icon: Image,
-      title: "Image Generation",
-      description: "Create visual representations of genetic structures and sequences to better understand complex biological concepts."
+      title: "AI Image Generation",
+      description: "Generate visual representations of genetic structures using advanced AI web tools for better understanding of complex biological concepts."
     },
     {
       icon: BarChart3,
-      title: "Data Analysis",
-      description: "Process and analyze complex genomic datasets, identifying patterns and correlations that may not be immediately apparent."
+      title: "Free Data Analysis",
+      description: "Process complex genomic datasets with our free AI tools, identifying patterns and correlations in genetic research."
     },
     {
       icon: FileImage,
-      title: "Image Analysis",
-      description: "Extract information from microscopy images, gel electrophoresis results, and other visual genetic data."
+      title: "AI Image Analysis",
+      description: "Extract genetic information from microscopy images and gel electrophoresis results using artificial intelligence."
     },
     {
       icon: Headphones,
-      title: "Voice Features",
-      description: "Interact with genomic data through voice commands and receive audio explanations of complex genetic concepts."
+      title: "Voice-Enabled AI",
+      description: "Interact with genomic data through voice commands using our innovative AI web tools platform."
     },
     {
       icon: FileText,
-      title: "Document Creation",
-      description: "Generate comprehensive reports and documentation of your genetic analysis with downloadable formats."
+      title: "AI Document Creation",
+      description: "Generate comprehensive genetic analysis reports with our free AI tools for scientific documentation."
     },
     {
       icon: Code,
-      title: "Coding Assistance",
-      description: "Get help with bioinformatics code and algorithms for processing genetic data more efficiently."
+      title: "Bioinformatics AI",
+      description: "Get AI-powered coding assistance for bioinformatics algorithms and genetic data processing workflows."
     },
     {
       icon: Search,
-      title: "Web Searching",
-      description: "Find relevant research papers, genetic databases, and other online resources to support your genomic investigations."
+      title: "Research AI Tools",
+      description: "Access relevant genetic databases and research papers using our intelligent AI web tools search capabilities."
     },
     {
       icon: Lock,
-      title: "Uncensored Analysis",
-      description: "Access limitless analytical capabilities with no restrictions on the types of genetic questions you can explore."
+      title: "Unrestricted AI Analysis",
+      description: "Unlimited analytical capabilities with no restrictions - the most comprehensive free AI tools for genetics."
     }
   ];
 
@@ -112,17 +112,18 @@ const Features = () => {
         <div ref={titleRef} className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-4 py-1 mb-4 rounded-full border border-cyber-neon-pink bg-cyber-bg-darker">
             <p className="text-sm font-medium text-cyber-neon-pink">
-              Advanced Capabilities
+              Advanced AI Web Tools Capabilities
             </p>
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold font-cyber mb-6">
-            <span className="text-white">Powerful</span>
-            <span className="text-cyber-neon-pink text-glow-pink"> Genomic Tools</span>
+            <span className="text-white">Free AI Tools for</span>
+            <span className="text-cyber-neon-pink text-glow-pink"> Genomic Research</span>
           </h2>
           
           <p className="text-gray-300">
-            Genome GPT combines cutting-edge AI technology with deep genetic expertise to provide a comprehensive suite of tools for genomic research and analysis.
+            Our comprehensive suite of free AI web tools combines cutting-edge artificial intelligence with deep genetic expertise, 
+            providing researchers and scientists with the most advanced AI tools for genomic analysis and scientific discovery.
           </p>
         </div>
         
