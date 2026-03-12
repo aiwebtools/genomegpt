@@ -85,7 +85,7 @@ const Disclaimer = () => {
               <h3 className="text-base font-bold text-white mb-1">Terms of Service</h3>
               <p className="text-gray-400 text-sm">
                 By using Genome GPT, you agree to abide by our 
-                <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-cyber-neon-blue hover:underline"> Terms of Service</a>. 
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-cyber-neon-blue hover:underline"> Terms of Service</a>. 
                 Please review them carefully before using the service.
               </p>
             </div>
