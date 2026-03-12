@@ -21,7 +21,7 @@ const Footer = () => {
                   </span>
                 </h1>
                 <p className="text-xs text-muted-foreground">
-                  Presented by <a href="https://www.aiwebtools.ai" className="hover:text-cyber-neon-blue transition-colors">AiWebTools.Ai</a>
+                  Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-neon-blue transition-colors" target="_blank" rel="noopener noreferrer">AiWebTools.Ai</a>
                 </p>
               </div>
             </div>
