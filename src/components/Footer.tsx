@@ -21,7 +21,7 @@ const Footer = () => {
                   </span>
                 </h1>
                 <p className="text-xs text-muted-foreground">
-                  Presented by <a href="https://www.aiwebtools.ai" className="hover:text-cyber-neon-blue transition-colors">AiWebTools.Ai</a>
+                  Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-neon-blue transition-colors" target="_blank" rel="noopener noreferrer">AiWebTools.Ai</a>
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   className="text-gray-400 hover:text-cyber-neon-blue transition-colors hover-underline"
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://aiwebtools.ai/terms-of-services" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   className="text-gray-400 hover:text-cyber-neon-blue transition-colors hover-underline"
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -124,7 +124,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               className="hover:text-cyber-neon-blue transition-colors"
               target="_blank" 
               rel="noopener noreferrer"
@@ -134,7 +134,7 @@ const Footer = () => {
           </p>
           
           <a 
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             className="bg-cyber-neon-purple/10 hover:bg-cyber-neon-purple/20 text-cyber-neon-purple border border-cyber-neon-purple/50 rounded-full px-6 py-2 flex items-center space-x-2 transition-all duration-300"
             target="_blank" 
             rel="noopener noreferrer"
